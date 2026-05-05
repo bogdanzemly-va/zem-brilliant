@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Огранка бриллиантов и украшения на заказ | zem.brilliant</title>
+  <meta name="description" content="Украшения по вашей фотографии или идее. Огранка алмазов в бриллианты, сапфиры, изумруды, рубины. Более 20 лет опыта, производство в Орле, доставка по всей России спецсвязью."/>
+  <meta name="keywords" content="огранка бриллиантов, украшения на заказ, купить бриллиант, ювелир Орёл, огранка алмаза, бриллиант на заказ, украшение по фото, сапфир огранка, изумруд купить, доставка бриллиантов Россия"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://zembrilliant.netlify.app/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://zembrilliant.netlify.app/"/>
+  <meta property="og:title" content="zem.brilliant — украшения по вашей идее или фотографии"/>
+  <meta property="og:description" content="Огранка алмазов в бриллианты. Украшения по фото или эскизу. Природные и выращенные камни. Доставка по всей России."/>
+  <meta property="og:locale" content="ru_RU"/>
+  <meta property="og:site_name" content="zem.brilliant"/>
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="zem.brilliant — огранка бриллиантов и украшения на заказ"/>
+  <meta name="twitter:description" content="Украшения по вашей фотографии или идее. Более 20 лет опыта. Доставка по России."/>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "zem.brilliant",
+    "description": "Профессиональная огранка драгоценных камней и ювелирные украшения на заказ. Работаем с природными и искусственно выращенными камнями.",
+    "url": "https://zembrilliant.netlify.app",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Орёл",
+      "addressRegion": "Орловская область",
+      "addressCountry": "RU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "url": "https://t.me/Maximzem8"
+    },
+    "sameAs": ["https://t.me/zem_brilliant"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Услуги огранки и украшения",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Огранка алмазов в бриллианты"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Украшения по фотографии или эскизу"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Подбор и огранка драгоценных камней"}}
+      ]
+    }
+  }
+  </script>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{background:#04060d}#root{min-height:100vh}</style>
+  <!-- Loading screen while JS parses -->
+  <style>
+    #loading{position:fixed;inset:0;background:#04060d;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .5s}
+    #loading.hide{opacity:0;pointer-events:none}
+    .load-logo{font-family:Georgia,serif;font-size:22px;letter-spacing:5px;color:#f0ede8;margin-bottom:16px}
+    .load-dot{color:#c9a86c}
+    .load-bar{width:120px;height:1px;background:rgba(255,255,255,.1);overflow:hidden}
+    .load-fill{height:100%;background:#c9a86c;animation:loadfill 2s ease forwards}
+    @keyframes loadfill{from{width:0}to{width:100%}}
+  </style>
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap');
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:#7a5f2e}
+        ::selection{background:#c9a86c;color:#000}
+        .nl{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(240,237,232,.52);cursor:pointer;text-decoration:none;transition:color .3s;background:none;border:none;font-weight:400}.nl:hover{color:#c9a86c}
+        .bg{display:inline-block;padding:14px 34px;border:1px solid #c9a86c;color:#c9a86c;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:all .3s;background:transparent}.bg:hover{background:#c9a86c;color:#04060d}
+        .bf{display:inline-block;padding:14px 34px;background:#c9a86c;color:#04060d;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;text-decoration:none;transition:all .3s;border:1px solid #c9a86c;font-weight:500}.bf:hover{background:transparent;color:#c9a86c}
+        .sp{padding:22px 24px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);transition:border-color .3s,transform .3s}.sp:hover{border-color:rgba(201,168,108,.45);transform:translateY(-3px)}
+        .sr{display:flex;gap:28px;padding:32px 0;border-bottom:1px solid rgba(255,255,255,.05)}.sr:last-child{border-bottom:none}
+        .sn{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:rgba(201,168,108,.18);min-width:58px;line-height:1;transition:color .3s}.sr:hover .sn{color:#c9a86c}
+        .tgb{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;border:1px solid rgba(41,182,246,.32);color:#29b6f6;font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;transition:all .3s;background:rgba(41,182,246,.04)}.tgb:hover{background:rgba(41,182,246,.13);border-color:rgba(41,182,246,.65)}
+        .sl{font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:#c9a86c;margin-bottom:18px}
+        .sh{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,3.8vw,52px);font-weight:300;line-height:1.12}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+        .a0{animation:fadeUp 1s cubic-bezier(.16,1,.3,1) both}.a1{animation:fadeUp 1s .2s cubic-bezier(.16,1,.3,1) both}.a2{animation:fadeUp 1s .38s cubic-bezier(.16,1,.3,1) both}.a3{animation:fadeUp 1s .56s cubic-bezier(.16,1,.3,1) both}
+        @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}.dot{animation:pulse 2.2s ease-in-out infinite}
+        input,textarea{transition:border-color .3s}input:focus,textarea:focus{border-color:rgba(201,168,108,.4)!important;outline:none}
+        input::placeholder,textarea::placeholder{color:rgba(240,237,232,.22)}
+        @media(max-width:768px){
+          .nav-links{display:none!important}
+          .nav-tg{padding:7px 14px!important;font-size:9px!important}
+          .section-pad{padding:64px 20px!important}
+          .section-pad-sm{padding:56px 20px!important}
+          .two-col{grid-template-columns:1fr!important;gap:36px!important}
+          .stones-grid{grid-template-columns:1fr!important;gap:0!important}
+          .sp{padding:16px 20px!important;border-radius:0!important;border-bottom:none!important}
+          .contact-grid{grid-template-columns:1fr!important}
+          .footer-inner{flex-direction:column!important;align-items:flex-start!important;gap:8px!important}
+          .sh{font-size:clamp(26px,7vw,40px)!important}
+          .btn-row{flex-direction:column!important;width:100%}
+          .btn-row a,.btn-row button{text-align:center!important;width:100%!important;display:block!important}
+          .contact-info{gap:24px!important;flex-wrap:wrap!important}
+          .bg,.bf{padding:13px 20px!important;font-size:9.5px!important;width:100%!important;text-align:center!important;display:block!important}
+          .hero-cards{display:none!important}
+
+          /* HERO MOBILE */
+          .hero-grid{display:block!important;padding:0!important}
+          .hero-col-text{position:relative!important;padding:90px 24px 40px!important;display:block!important;overflow:hidden!important}
+          .hero-col-jewelry{padding:32px 24px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+          .hero-col-diamond{display:none!important}
+          .hero-diamond-bg{display:block!important}
+          .mobile-quote{display:block!important}
+
+          /* Stones accordion on mobile */
+          .stones-grid{grid-template-columns:1fr!important}
+          .sp{cursor:pointer!important;border-bottom:1px solid rgba(255,255,255,.05)!important;border-left:none!important;border-right:none!important;border-top:none!important;padding:16px 0!important;background:transparent!important}
+          .sp:hover{transform:none!important;border-color:rgba(255,255,255,.08)!important}
+        }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <div class="load-logo">zem<span class="load-dot">.</span>brilliant</div>
+    <div class="load-bar"><div class="load-fill"></div></div>
+  </div>
+  <div id="root"></div>
+  <script>
+const { useEffect, useRef, useState, useCallback } = React;
+const C = {
+    bg: "#04060d", gold: "#c9a86c", white: "#f0ede8",
+    muted: "rgba(240,237,232,0.5)", border: "rgba(240,237,232,0.07)",
+};
+function DiamondCanvas({ mouse, scroll }) {
+    const canvasRef = useRef(null);
+    const stateRef = useRef({ mouse: { x: 0, y: 0 }, scroll: 0, raf: null });
+    const draw = useCallback((ctx, W, H, mx, my) => {
+        ctx.clearRect(0, 0, W, H);
+        const cx = W / 2, cy = H / 2;
+        const R = Math.min(W, H) * 0.44;
+        const lightAngle = Math.atan2(my, mx);
+        const lightDist = Math.sqrt(mx * mx + my * my);
+        const p = (r, a) => [cx + Math.cos(a) * r, cy + Math.sin(a) * r];
+        const poly = (pts, fillFn) => {
+            ctx.beginPath();
+            ctx.moveTo(pts[0][0], pts[0][1]);
+            for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+            ctx.closePath(); fillFn(); ctx.fill();
+        };
+        const line = (pts, color, w = 0.5) => {
+            ctx.beginPath();
+            ctx.moveTo(pts[0][0], pts[0][1]);
+            for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+            ctx.closePath(); ctx.strokeStyle = color; ctx.lineWidth = w; ctx.stroke();
+        };
+        const facetBrightness = (faceAngle, min = 0, max = 1) => {
+            const dot = (Math.cos(faceAngle - lightAngle) * 0.5 + 0.5);
+            const pulsed = dot * (0.7 + lightDist * 0.3);
+            return min + Math.pow(pulsed, 1.4) * (max - min);
+        };
+        ctx.save();
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.clip();
+        ctx.fillStyle = "#07090f"; ctx.fill();
+        for (let i = 0; i < 16; i++) {
+            const a0 = (i / 16) * Math.PI * 2 - Math.PI / 2;
+            const am = ((i + .5) / 16) * Math.PI * 2 - Math.PI / 2;
+            const a1 = ((i + 1) / 16) * Math.PI * 2 - Math.PI / 2;
+            const g0 = p(R, a0), g1 = p(R, a1), c0 = p(R * 0.76, am);
+            const br = facetBrightness(am);
+            const isDark = (i % 2 === 0) ? (mx > 0.1) : (mx < -0.1);
+            const pts = [g0, c0, g1];
+            if (isDark || br < 0.35) {
+                poly(pts, () => { const g = ctx.createLinearGradient(g0[0], g0[1], c0[0], c0[1]); g.addColorStop(0, `rgba(8,11,20,${0.7 + br * 0.2})`); g.addColorStop(1, `rgba(15,20,38,0.5)`); ctx.fillStyle = g; });
+            } else {
+                poly(pts, () => { const g = ctx.createLinearGradient(g0[0], g0[1], c0[0], c0[1]); g.addColorStop(0, `rgba(200,220,255,${0.1 + br * 0.3})`); g.addColorStop(1, `rgba(240,248,255,${0.05 + br * 0.2})`); ctx.fillStyle = g; });
+            }
+            line(pts, `rgba(255,255,255,${0.04 + br * 0.04})`);
+        }
+        for (let i = 0; i < 8; i++) {
+            const a0 = (i / 8) * Math.PI * 2 - Math.PI / 2;
+            const am = ((i + .5) / 8) * Math.PI * 2 - Math.PI / 2;
+            const a1 = ((i + 1) / 8) * Math.PI * 2 - Math.PI / 2;
+            const g0 = p(R, a0), g1 = p(R, a1), cr = p(R * 0.76, am), te = p(R * 0.44, am);
+            const br = facetBrightness(am);
+            const dot = Math.cos(am - lightAngle);
+            const pts = [g0, cr, te, cr, g1];
+            if (dot > 0.15) {
+                poly(pts, () => { const g = ctx.createRadialGradient(te[0], te[1], 0, cr[0], cr[1], R * 0.6); g.addColorStop(0, `rgba(240,248,255,${0.65 + br * 0.35})`); g.addColorStop(0.4, `rgba(200,225,255,${0.45 + br * 0.3})`); g.addColorStop(1, `rgba(140,180,230,${0.2 + br * 0.15})`); ctx.fillStyle = g; });
+            } else if (dot > -0.3) {
+                poly(pts, () => { const g = ctx.createLinearGradient(g0[0], g0[1], te[0], te[1]); g.addColorStop(0, `rgba(60,80,130,${0.6 + br * 0.2})`); g.addColorStop(1, `rgba(30,45,80,0.8)`); ctx.fillStyle = g; });
+            } else {
+                poly(pts, () => { const g = ctx.createLinearGradient(g0[0], g0[1], te[0], te[1]); g.addColorStop(0, `rgba(8,10,20,0.95)`); g.addColorStop(1, `rgba(15,18,35,0.85)`); ctx.fillStyle = g; });
+            }
+            line(pts, `rgba(255,255,255,${0.06 + br * 0.08})`, 0.7);
+        }
+        for (let i = 0; i < 8; i++) {
+            const at0 = (i / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8;
+            const at1 = ((i + 1) / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8;
+            const am = ((i + .5) / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8;
+            const t0 = p(R * 0.44, at0), t1 = p(R * 0.44, at1), tip = p(R * 0.63, am);
+            const dot = Math.cos(am - lightAngle);
+            const br = facetBrightness(am, 0, 1);
+            const pts = [t0, tip, t1];
+            if (dot > 0.2) {
+                poly(pts, () => { const g = ctx.createLinearGradient(tip[0], tip[1], cx, cy); g.addColorStop(0, `rgba(250,253,255,${0.7 + br * 0.3})`); g.addColorStop(1, `rgba(210,230,255,${0.4 + br * 0.3})`); ctx.fillStyle = g; });
+            } else {
+                poly(pts, () => { const g = ctx.createLinearGradient(tip[0], tip[1], cx, cy); g.addColorStop(0, `rgba(5,7,15,0.95)`); g.addColorStop(1, `rgba(12,16,30,0.8)`); ctx.fillStyle = g; });
+            }
+            line(pts, `rgba(255,255,255,${0.05 + br * 0.07})`, 0.6);
+        }
+        const tableR = R * 0.44;
+        const tablePts = Array.from({ length: 8 }, (_, i) => p(tableR, (i / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8));
+        poly(tablePts, () => { const g = ctx.createRadialGradient(cx + mx * 20, cy + my * 15, 0, cx, cy, tableR); g.addColorStop(0, `rgba(255,255,255,0.92)`); g.addColorStop(0.25, `rgba(235,245,255,0.78)`); g.addColorStop(0.6, `rgba(180,210,240,0.55)`); g.addColorStop(1, `rgba(80,120,180,0.4)`); ctx.fillStyle = g; });
+        for (let i = 0; i < 8; i++) {
+            const at0 = (i / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8;
+            const at1 = ((i + 1) / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8;
+            const am = ((i + .5) / 8) * Math.PI * 2 - Math.PI / 2 + Math.PI / 8;
+            const t0 = p(tableR * 0.96, at0), t1 = p(tableR * 0.96, at1), mid = p(tableR * 0.28, am);
+            const dot = Math.cos(am - lightAngle + Math.PI);
+            if (dot > 0) { poly([t0, mid, t1], () => { ctx.fillStyle = `rgba(5,8,18,${0.55 + dot * 0.3})`; }); }
+        }
+        ctx.beginPath();
+        tablePts.forEach((pt, i) => i === 0 ? ctx.moveTo(pt[0], pt[1]) : ctx.lineTo(pt[0], pt[1]));
+        ctx.closePath(); ctx.strokeStyle = `rgba(255,255,255,0.3)`; ctx.lineWidth = 1; ctx.stroke();
+        const hx = cx - R * 0.22 + mx * R * 0.12, hy = cy - R * 0.28 + my * R * 0.10;
+        const hg = ctx.createRadialGradient(hx, hy, 0, hx, hy, R * 0.18);
+        hg.addColorStop(0, 'rgba(255,255,255,0.95)'); hg.addColorStop(0.3, 'rgba(255,255,255,0.5)'); hg.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = hg; ctx.beginPath(); ctx.ellipse(hx, hy, R * 0.18, R * 0.11, -0.5, 0, Math.PI * 2); ctx.fill();
+        const gx2 = ctx.createRadialGradient(hx + R * 0.04, hy + R * 0.02, 0, hx + R * 0.04, hy + R * 0.02, R * 0.04);
+        gx2.addColorStop(0, 'rgba(255,255,255,1)'); gx2.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = gx2; ctx.beginPath(); ctx.ellipse(hx + R * 0.04, hy + R * 0.02, R * 0.04, R * 0.025, -0.5, 0, Math.PI * 2); ctx.fill();
+        const bx = cx + R * 0.18 - mx * R * 0.08, by = cy + R * 0.05 - my * R * 0.06;
+        const bg2 = ctx.createRadialGradient(bx, by, 0, bx, by, R * 0.12);
+        bg2.addColorStop(0, `rgba(130,200,255,${0.5 + lightDist * 0.3})`); bg2.addColorStop(0.5, `rgba(100,170,255,0.2)`); bg2.addColorStop(1, 'rgba(100,170,255,0)');
+        ctx.fillStyle = bg2; ctx.beginPath(); ctx.ellipse(bx, by, R * 0.12, R * 0.07, 0.8, 0, Math.PI * 2); ctx.fill();
+        const yx = cx - R * 0.1 + mx * R * 0.15, yy = cy + R * 0.2 + my * R * -0.1;
+        const yg = ctx.createRadialGradient(yx, yy, 0, yx, yy, R * 0.09);
+        yg.addColorStop(0, `rgba(255,220,100,${0.35 + lightDist * 0.2})`); yg.addColorStop(1, 'rgba(255,200,80,0)');
+        ctx.fillStyle = yg; ctx.beginPath(); ctx.ellipse(yx, yy, R * 0.09, R * 0.05, -0.3, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.strokeStyle = 'rgba(255,255,255,0.2)'; ctx.lineWidth = 1.5; ctx.stroke();
+        ctx.restore();
+        const og = ctx.createRadialGradient(cx, cy, R * 0.85, cx, cy, R * 1.1);
+        og.addColorStop(0, 'rgba(180,210,255,0)'); og.addColorStop(0.7, 'rgba(180,210,255,0.06)'); og.addColorStop(1, 'rgba(180,210,255,0)');
+        ctx.fillStyle = og; ctx.beginPath(); ctx.arc(cx, cy, R * 1.1, 0, Math.PI * 2); ctx.fill();
+    }, []);
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+        let raf;
+        const render = () => {
+            const { mouse: m } = stateRef.current;
+            const dpr = window.devicePixelRatio || 1;
+            const W = canvas.offsetWidth, H = canvas.offsetHeight;
+            canvas.width = W * dpr; canvas.height = H * dpr;
+            ctx.scale(dpr, dpr);
+            draw(ctx, W, H, m.x, m.y);
+            raf = requestAnimationFrame(render);
+        };
+        render();
+        return () => cancelAnimationFrame(raf);
+    }, [draw]);
+    useEffect(() => { stateRef.current.mouse = mouse; }, [mouse]);
+    useEffect(() => { stateRef.current.scroll = scroll; }, [scroll]);
+    const scaleVal = Math.max(0.25, 1 - scroll * 0.62);
+    const translateY = scroll * -130;
+    return React.createElement("div", { style: { position: "absolute", right: "1%", top: "50%", transform: `translateY(calc(-50% + ${translateY}px)) scale(${scaleVal})`, transformOrigin: "center center", width: 500, height: 500, pointerEvents: "none", opacity: Math.max(0, 1 - scroll * 1.5), transition: "opacity 0.1s" } },
+        React.createElement("canvas", { ref: canvasRef, style: { width: "100%", height: "100%" } }));
+}
+function Particles({ scroll }) {
+    const pts = useRef(Array.from({ length: 45 }, () => ({ x: 38 + Math.random() * 56, y: 5 + Math.random() * 90, r: 0.6 + Math.random() * 1.3, op: 0.06 + Math.random() * 0.28, sp: 0.005 + Math.random() * 0.012, drift: (Math.random() - .5) * 0.004 })));
+    const [, tick] = useState(0);
+    useEffect(() => {
+        let raf;
+        const run = () => { pts.current.forEach(p => { p.y -= p.sp; p.x += p.drift; if (p.y < -2) { p.y = 102; p.x = 38 + Math.random() * 56; } }); tick(t => t + 1); raf = requestAnimationFrame(run); };
+        run(); return () => cancelAnimationFrame(raf);
+    }, []);
+    return React.createElement("div", { style: { position: "absolute", inset: 0, pointerEvents: "none", opacity: Math.max(0, 1 - scroll * 2) } },
+        pts.current.map((p, i) => React.createElement("div", { key: i, style: { position: "absolute", left: `${p.x}%`, top: `${p.y}%`, width: p.r * 2, height: p.r * 2, borderRadius: "50%", background: i % 3 === 0 ? C.gold : "rgba(200,220,255,0.9)", opacity: p.op } })));
+}
+function Reveal({ children, delay = 0 }) {
+    const ref = useRef(null);
+    const [vis, setVis] = useState(false);
+    useEffect(() => {
+        const el = ref.current; if (!el) return;
+        const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVis(true); }, { threshold: 0.1 });
+        obs.observe(el); return () => obs.disconnect();
+    }, []);
+    return React.createElement("div", { ref, style: { opacity: vis ? 1 : 0, transform: vis ? "translateY(0)" : "translateY(30px)", transition: `opacity .85s cubic-bezier(.16,1,.3,1) ${delay}s,transform .85s cubic-bezier(.16,1,.3,1) ${delay}s` } }, children);
+}
+function Ticker() {
+    const items = ["Бриллианты", "Сапфиры", "Рубины", "Изумруды", "Александриты", "Шпинель", "Природные камни", "Огранка на заказ"];
+    return React.createElement("div", { style: { overflow: "hidden", borderTop: `1px solid ${C.border}`, borderBottom: `1px solid ${C.border}`, padding: "13px 0", background: "rgba(201,168,108,0.025)" } },
+        React.createElement("style", null, `@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}.tick{display:flex;animation:ticker 26s linear infinite;width:max-content}`),
+        React.createElement("div", { className: "tick" }, [...items, ...items].map((item, i) => React.createElement("span", { key: i, style: { fontFamily: "'Montserrat',sans-serif", fontSize: 10.5, letterSpacing: 3.5, textTransform: "uppercase", color: i % 2 === 0 ? C.gold : C.muted, padding: "0 34px", whiteSpace: "nowrap" } }, item, " ", i % 2 === 0 ? "✦" : "·"))));
+}
+const STEPS = [
+    { n: "01", title: "Присылаете идею", body: "Фото, эскиз, референс или просто слова. Любой формат." },
+    { n: "02", title: "Подбор камня", body: "Из текущего сырья подбираем по цвету, размеру и бюджету." },
+    { n: "03", title: "Огранка", body: "Опытные мастера огранивают камень вручную на собственном производстве." },
+    { n: "04", title: "Ювелирная оправа", body: "Кольцо, серьги, подвеска — воплощают ваш дизайн." },
+    { n: "05", title: "Доставка", body: "Спецсвязь РФ в любой город с полной страховкой." },
+];
+const STONES = [
+    { name: "Бриллиант", sub: "Алмаз огранённый", color: "#c8e8ff", desc: "Самый популярный драгоценный камень в мире. Алмаз после профессиональной огранки превращается в бриллиант с неповторимой игрой света. Мы выполняем огранку любой сложности — от классического круглого до редких фантазийных форм. Работаем как с природными алмазами, так и с выращенными в лаборатории." },
+    { name: "Сапфир", sub: "Корунд синий", color: "#7fa8ff", desc: "Королевский синий корунд — символ мудрости и верности. Природные сапфиры из Шри-Ланки и Мадагаскара отличаются глубиной цвета и чистотой. Выполняем огранку в любой форме: овал, подушка, груша, маркиз. Доступны звёздчатые сапфиры с эффектом астеризма." },
+    { name: "Изумруд", sub: "Берилл зелёный", color: "#6ddba0", desc: "Насыщенный зелёный берилл — один из трёх самых ценных драгоценных камней. Природные включения в изумруде называют «садом» и считают признаком подлинности. Работаем с камнями из Колумбии и Замбии. Классическая ступенчатая огранка подчёркивает глубину цвета." },
+    { name: "Рубин", sub: "Корунд красный", color: "#ff8888", desc: "Красный корунд — символ страсти и жизненной силы. Природные рубины «голубиной крови» из Бирмы считаются эталоном. Огранка рубина требует особого мастерства: важно сохранить максимум веса и цвета. Подбираем камни под любой оттенок — от розового до насыщенного красного." },
+    { name: "Александрит", sub: "Хризоберилл", color: "#c080ff", desc: "Редчайший камень-хамелеон: при дневном освещении зелёный, при искусственном — пурпурно-красный. Природный александрит — один из самых дорогих камней в мире. Уральские александриты особенно ценятся коллекционерами. Эффект смены цвета сохраняется при любой форме огранки." },
+    { name: "Шпинель", sub: "Магниевая шпинель", color: "#ff80c0", desc: "Благородный камень, долгое время путавшийся с рубинами в королевских коллекциях. Шпинель из Таджикистана и Мьянмы поражает чистотой и яркостью цвета. Доступна в розовом, красном, синем и фиолетовом оттенках. Набирает популярность как альтернатива рубину по соотношению цена-качество." },
+];
+const FAQ = [
+    { q: "Как заказать украшение по фотографии?", a: "Всё просто: заполните форму на сайте или напишите нам в Telegram. Приложите фото украшения, которое хотите воплотить — или опишите идею словами. Мы подберём подходящий камень из текущего ассортимента сырья, огранем его и передадим ювелиру для создания оправы." },
+    { q: "Сколько стоит огранка камня?", a: "Стоимость зависит от размера камня, сложности формы огранки и вида материала. Напишите нам с описанием или фото — мы рассчитаем точную стоимость индивидуально. Работаем с любым бюджетом и подберём оптимальный вариант." },
+    { q: "Чем отличаются природные камни от выращенных?", a: "Природные камни формировались миллионы лет в земной коре — каждый уникален. Выращенные (лабораторные) камни имеют идентичный химический состав и оптические свойства, но стоят значительно дешевле. Мы работаем с обоими видами и поможем выбрать лучший вариант под ваш запрос и бюджет." },
+    { q: "Как происходит доставка?", a: "Готовое украшение отправляем спецсвязью РФ в любой город страны. Это специализированная служба для перевозки ценностей с полной страховкой вложения. Срок доставки — 3-7 рабочих дней в зависимости от региона." },
+    { q: "Сколько времени занимает изготовление украшения?", a: "От момента согласования до готового украшения обычно уходит 2-4 недели. Это включает огранку камня, изготовление оправы и финальную сборку. Точные сроки зависят от сложности работы и сообщаются при обсуждении заказа." },
+    { q: "Можно ли использовать свой камень?", a: "Да, мы можем огранить ваш камень или создать украшение с уже ограненным камнем. Свяжитесь с нами — обсудим детали и возможности." },
+];
+function JewelrySlideshow({ scroll }) {
+    const [active, setActive] = useState(0);
+    const [animating, setAnimating] = useState(false);
+    const G = "#c9a86c";
+    const items = [{ name: "Кольцо с бриллиантом", sub: "Помолвочное · Round Brilliant" }, { name: "Колье с сапфиром", sub: "Ювелирная цепочка · Princess Cut" }, { name: "Серьги с рубином", sub: "Капли · Oval Cut" }];
+    useEffect(() => {
+        const t = setInterval(() => { setAnimating(true); setTimeout(() => { setActive(a => (a + 1) % 3); setAnimating(false); }, 400); }, 3200);
+        return () => clearInterval(t);
+    }, []);
+    const Ring = () => React.createElement("svg", { viewBox: "0 0 300 300", width: "300", height: "300", style: { filter: "drop-shadow(0 0 40px rgba(201,168,108,.35))" } },
+        React.createElement("defs", null,
+            React.createElement("radialGradient", { id: "rg1", cx: "40%", cy: "35%", r: "60%" }, React.createElement("stop", { offset: "0%", stopColor: "white", stopOpacity: ".9" }), React.createElement("stop", { offset: "40%", stopColor: "#ffe5a0", stopOpacity: ".8" }), React.createElement("stop", { offset: "100%", stopColor: "#8a6020", stopOpacity: ".6" })),
+            React.createElement("radialGradient", { id: "rg2", cx: "50%", cy: "50%", r: "50%" }, React.createElement("stop", { offset: "0%", stopColor: "#c9a86c", stopOpacity: ".15" }), React.createElement("stop", { offset: "100%", stopColor: "#c9a86c", stopOpacity: "0" }))),
+        React.createElement("ellipse", { cx: "150", cy: "185", rx: "85", ry: "22", fill: "rgba(201,168,108,.08)", style: { filter: "blur(8px)" } }),
+        React.createElement("path", { d: "M 72 175 Q 150 230 228 175", fill: "none", stroke: G, strokeWidth: "18", strokeLinecap: "round", opacity: ".9" }),
+        React.createElement("path", { d: "M 72 175 Q 150 230 228 175", fill: "none", stroke: "rgba(255,240,180,.6)", strokeWidth: "6", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 72 175 Q 150 230 228 175", fill: "none", stroke: "rgba(255,255,255,.3)", strokeWidth: "2", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 72 175 L 72 148", stroke: G, strokeWidth: "18", strokeLinecap: "round", opacity: ".85" }),
+        React.createElement("path", { d: "M 228 175 L 228 148", stroke: G, strokeWidth: "18", strokeLinecap: "round", opacity: ".85" }),
+        React.createElement("path", { d: "M 72 148 L 72 175", stroke: "rgba(255,240,180,.5)", strokeWidth: "6", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 228 148 L 228 175", stroke: "rgba(255,240,180,.5)", strokeWidth: "6", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 72 148 Q 150 105 228 148", fill: "none", stroke: G, strokeWidth: "18", strokeLinecap: "round", opacity: ".9" }),
+        React.createElement("path", { d: "M 72 148 Q 150 105 228 148", fill: "none", stroke: "rgba(255,240,180,.6)", strokeWidth: "6", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 72 148 Q 150 105 228 148", fill: "none", stroke: "rgba(255,255,255,.35)", strokeWidth: "2", strokeLinecap: "round" }),
+        [[-28,-28],[28,-28],[0,-38],[28,28],[-28,28]].map(([dx,dy],i) => React.createElement("line", { key: i, x1: 150+dx*0.7, y1: 128+dy*0.7, x2: 150+dx, y2: 128+dy, stroke: G, strokeWidth: "3.5", strokeLinecap: "round", opacity: ".8" })),
+        Array.from({length:8},(_,i) => { const a0=(i/8)*Math.PI*2-Math.PI/2,am=((i+.5)/8)*Math.PI*2-Math.PI/2,a1=((i+1)/8)*Math.PI*2-Math.PI/2,R=38,Rc=29,Rt=17; const g0=[150+Math.cos(a0)*R,128+Math.sin(a0)*R],g1=[150+Math.cos(a1)*R,128+Math.sin(a1)*R],cr=[150+Math.cos(am)*Rc,128+Math.sin(am)*Rc],te=[150+Math.cos(am)*Rt,128+Math.sin(am)*Rt]; const bright=i%2===0; return React.createElement("polygon",{key:i,points:`${g0} ${cr} ${te} ${cr} ${g1}`,fill:bright?"rgba(235,248,255,.65)":"rgba(8,12,25,.92)",stroke:"rgba(255,255,255,.1)",strokeWidth:".5"}); }),
+        Array.from({length:8},(_,i) => { const at0=(i/8)*Math.PI*2-Math.PI/2+Math.PI/8,at1=((i+1)/8)*Math.PI*2-Math.PI/2+Math.PI/8,am=((i+.5)/8)*Math.PI*2-Math.PI/2+Math.PI/8; const t0=[150+Math.cos(at0)*17,128+Math.sin(at0)*17],t1=[150+Math.cos(at1)*17,128+Math.sin(at1)*17],tip=[150+Math.cos(am)*26,128+Math.sin(am)*26]; return React.createElement("polygon",{key:i,points:`${t0} ${tip} ${t1}`,fill:i%3!==1?"rgba(245,252,255,.7)":"rgba(5,8,18,.95)",stroke:"rgba(255,255,255,.08)",strokeWidth:".4"}); }),
+        React.createElement("polygon", { points: Array.from({length:8},(_,i)=>{const a=(i/8)*Math.PI*2-Math.PI/2+Math.PI/8;return `${150+Math.cos(a)*17},${128+Math.sin(a)*17}`;}).join(" "), fill: "url(#rg1)", stroke: "rgba(255,255,255,.3)", strokeWidth: ".8" }),
+        React.createElement("ellipse", { cx: "118", cy: "130", rx: "14", ry: "5", fill: "rgba(255,255,255,.4)", style: { filter: "blur(3px)" }, transform: "rotate(-35 118 130)" }),
+        React.createElement("ellipse", { cx: "182", cy: "130", rx: "14", ry: "5", fill: "rgba(255,255,255,.25)", style: { filter: "blur(3px)" }, transform: "rotate(35 182 130)" }));
+    const Necklace = () => React.createElement("svg", { viewBox: "0 0 300 300", width: "300", height: "300", style: { filter: "drop-shadow(0 0 40px rgba(201,168,108,.3))" } },
+        React.createElement("defs", null, React.createElement("radialGradient", { id: "ng1", cx: "40%", cy: "35%", r: "60%" }, React.createElement("stop", { offset: "0%", stopColor: "white", stopOpacity: ".9" }), React.createElement("stop", { offset: "40%", stopColor: "#ffe5a0", stopOpacity: ".8" }), React.createElement("stop", { offset: "100%", stopColor: "#8a6020", stopOpacity: ".6" }))),
+        React.createElement("path", { d: "M 40 80 Q 150 190 260 80", fill: "none", stroke: G, strokeWidth: "2.5", strokeDasharray: "6 4", opacity: ".7" }),
+        React.createElement("path", { d: "M 40 80 Q 150 190 260 80", fill: "none", stroke: "rgba(255,240,180,.4)", strokeWidth: "1", strokeDasharray: "6 4" }),
+        Array.from({length:12},(_,i) => { const t=i/11,x=40+(260-40)*t,y=80+110*Math.sin(t*Math.PI); return React.createElement("circle",{key:i,cx:x,cy:y,r:"3",fill:G,opacity:.6+.3*Math.sin(i),stroke:"rgba(255,240,180,.5)",strokeWidth:".8"}); }),
+        React.createElement("path", { d: "M 150 190 L 150 215", stroke: G, strokeWidth: "4", strokeLinecap: "round" }),
+        React.createElement("ellipse", { cx: "150", cy: "222", rx: "16", ry: "8", fill: "none", stroke: G, strokeWidth: "3", opacity: ".8" }),
+        React.createElement("ellipse", { cx: "150", cy: "222", rx: "16", ry: "8", fill: "none", stroke: "rgba(255,240,180,.5)", strokeWidth: "1" }),
+        [[-16,0],[16,0],[0,-10],[0,10]].map(([dx,dy],i) => React.createElement("line",{key:i,x1:150+dx*0.6,y1:222+dy*0.6,x2:150+dx,y2:222+dy,stroke:G,strokeWidth:"3",strokeLinecap:"round",opacity:".8"})),
+        [[-12,-12],[12,-12],[12,12],[-12,12]].map(([dx,dy],i,arr) => { const next=arr[(i+1)%4],cx2=150,cy2=222; return React.createElement("polygon",{key:i,points:`${cx2+dx},${cy2+dy} ${cx2+next[0]*0.3},${cy2+next[1]*0.3} ${cx2+(dx+next[0])*0.6},${cy2+(dy+next[1])*0.6}`,fill:i%2===0?"rgba(220,240,255,.6)":"rgba(6,9,20,.9)",stroke:"rgba(255,255,255,.1)",strokeWidth:".5"}); }),
+        React.createElement("rect", { x: "138", y: "210", width: "24", height: "24", fill: "url(#ng1)", stroke: "rgba(255,255,255,.25)", strokeWidth: ".8", rx: "1" }),
+        React.createElement("ellipse", { cx: "144", cy: "216", rx: "6", ry: "4", fill: "rgba(255,255,255,.5)", style: { filter: "blur(2px)" }, transform: "rotate(-20 144 216)" }),
+        React.createElement("path", { d: "M 40 80 Q 30 60 50 50", fill: "none", stroke: G, strokeWidth: "2", opacity: ".5" }),
+        React.createElement("path", { d: "M 260 80 Q 270 60 250 50", fill: "none", stroke: G, strokeWidth: "2", opacity: ".5" }),
+        React.createElement("circle", { cx: "50", cy: "50", r: "5", fill: G, opacity: ".7", stroke: "rgba(255,240,180,.5)", strokeWidth: "1" }),
+        React.createElement("circle", { cx: "250", cy: "50", r: "5", fill: G, opacity: ".7", stroke: "rgba(255,240,180,.5)", strokeWidth: "1" }));
+    const Earrings = () => React.createElement("svg", { viewBox: "20 -30 260 300", width: "300", height: "300", style: { filter: "drop-shadow(0 0 40px rgba(201,168,108,.3))" } },
+        React.createElement("defs", null, React.createElement("radialGradient", { id: "eg1", cx: "40%", cy: "35%", r: "60%" }, React.createElement("stop", { offset: "0%", stopColor: "white", stopOpacity: ".9" }), React.createElement("stop", { offset: "40%", stopColor: "#ffe5a0", stopOpacity: ".8" }), React.createElement("stop", { offset: "100%", stopColor: "#8a6020", stopOpacity: ".6" }))),
+        React.createElement("path", { d: "M 88 55 Q 100 40 112 55 Q 118 68 108 78", fill: "none", stroke: G, strokeWidth: "3.5", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 88 55 Q 100 40 112 55 Q 118 68 108 78", fill: "none", stroke: "rgba(255,240,180,.5)", strokeWidth: "1.2", strokeLinecap: "round" }),
+        React.createElement("line", { x1: "108", y1: "78", x2: "100", y2: "108", stroke: G, strokeWidth: "2", strokeLinecap: "round", opacity: ".8" }),
+        [90,100,110].map((y,i) => React.createElement("circle",{key:i,cx:108-(i*2.5),cy:y,r:"2.5",fill:G,opacity:".75",stroke:"rgba(255,240,180,.4)",strokeWidth:".8"})),
+        React.createElement("path", { d: "M 100 108 L 82 145 L 100 175 L 118 145 Z", fill: G, opacity: ".15", stroke: G, strokeWidth: "1.5" }),
+        Array.from({length:8},(_,i)=>{ const a0=(i/8)*Math.PI*2-Math.PI/2,am=((i+.5)/8)*Math.PI*2-Math.PI/2,a1=((i+1)/8)*Math.PI*2-Math.PI/2,R=28,Rc=21,Rt=12,cx2=100,cy2=145; const g0=[cx2+Math.cos(a0)*R,cy2+Math.sin(a0)*R],g1=[cx2+Math.cos(a1)*R,cy2+Math.sin(a1)*R],cr=[cx2+Math.cos(am)*Rc,cy2+Math.sin(am)*Rc],te=[cx2+Math.cos(am)*Rt,cy2+Math.sin(am)*Rt]; const bright=i%2===0; return React.createElement("polygon",{key:i,points:`${g0} ${cr} ${te} ${cr} ${g1}`,fill:bright?"rgba(235,248,255,.65)":"rgba(8,12,25,.92)",stroke:"rgba(255,255,255,.08)",strokeWidth:".4"}); }),
+        React.createElement("polygon", { points: Array.from({length:8},(_,i)=>{const a=(i/8)*Math.PI*2-Math.PI/2+Math.PI/8;return `${100+Math.cos(a)*12},${145+Math.sin(a)*12}`;}).join(" "), fill: "url(#eg1)", stroke: "rgba(255,255,255,.25)", strokeWidth: ".7" }),
+        React.createElement("ellipse", { cx: "93", cy: "137", rx: "8", ry: "5", fill: "rgba(255,255,255,.45)", style: { filter: "blur(2px)" }, transform: "rotate(-25 93 137)" }),
+        React.createElement("path", { d: "M 188 55 Q 200 40 212 55 Q 218 68 208 78", fill: "none", stroke: G, strokeWidth: "3.5", strokeLinecap: "round" }),
+        React.createElement("path", { d: "M 188 55 Q 200 40 212 55 Q 218 68 208 78", fill: "none", stroke: "rgba(255,240,180,.5)", strokeWidth: "1.2", strokeLinecap: "round" }),
+        React.createElement("line", { x1: "208", y1: "78", x2: "200", y2: "108", stroke: G, strokeWidth: "2", strokeLinecap: "round", opacity: ".8" }),
+        [90,100,110].map((y,i) => React.createElement("circle",{key:i,cx:208-(i*2.5),cy:y,r:"2.5",fill:G,opacity:".75",stroke:"rgba(255,240,180,.4)",strokeWidth:".8"})),
+        React.createElement("path", { d: "M 200 108 L 182 145 L 200 175 L 218 145 Z", fill: G, opacity: ".15", stroke: G, strokeWidth: "1.5" }),
+        Array.from({length:8},(_,i)=>{ const a0=(i/8)*Math.PI*2-Math.PI/2,am=((i+.5)/8)*Math.PI*2-Math.PI/2,a1=((i+1)/8)*Math.PI*2-Math.PI/2,R=28,Rc=21,Rt=12,cx2=200,cy2=145; const g0=[cx2+Math.cos(a0)*R,cy2+Math.sin(a0)*R],g1=[cx2+Math.cos(a1)*R,cy2+Math.sin(a1)*R],cr=[cx2+Math.cos(am)*Rc,cy2+Math.sin(am)*Rc],te=[cx2+Math.cos(am)*Rt,cy2+Math.sin(am)*Rt]; const bright=i%2===0; return React.createElement("polygon",{key:i,points:`${g0} ${cr} ${te} ${cr} ${g1}`,fill:bright?"rgba(235,248,255,.65)":"rgba(8,12,25,.92)",stroke:"rgba(255,255,255,.08)",strokeWidth:".4"}); }),
+        React.createElement("polygon", { points: Array.from({length:8},(_,i)=>{const a=(i/8)*Math.PI*2-Math.PI/2+Math.PI/8;return `${200+Math.cos(a)*12},${145+Math.sin(a)*12}`;}).join(" "), fill: "url(#eg1)", stroke: "rgba(255,255,255,.25)", strokeWidth: ".7" }),
+        React.createElement("ellipse", { cx: "193", cy: "137", rx: "8", ry: "5", fill: "rgba(255,255,255,.45)", style: { filter: "blur(2px)" }, transform: "rotate(-25 193 137)" }));
+    const slides = [React.createElement(Ring, null), React.createElement(Necklace, null), React.createElement(Earrings, null)];
+    return React.createElement("div", { style: { display: "flex", flexDirection: "column", alignItems: "center", gap: 12, width: "100%" } },
+        React.createElement("div", { style: { position: "relative", width: 300, height: 300, display: "flex", alignItems: "center", justifyContent: "center" } },
+            React.createElement("div", { style: { position: "absolute", width: 308, height: 308, borderRadius: "50%", border: "1px solid rgba(201,168,108,.06)" } }),
+            React.createElement("div", { style: { position: "absolute", width: 320, height: 320, borderRadius: "50%", border: "1px solid rgba(201,168,108,.03)" } }),
+            React.createElement("div", { style: { opacity: animating ? 0 : 1, transform: animating ? "scale(.95) translateY(8px)" : "scale(1) translateY(0)", transition: "all .4s ease" } }, slides[active])),
+        React.createElement("div", { style: { textAlign: "center" } },
+            React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 18, color: "rgba(240,237,232,.85)", marginBottom: 4, transition: "all .4s" } }, items[active].name),
+            React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 9.5, letterSpacing: 2.5, textTransform: "uppercase", color: "rgba(201,168,108,.6)" } }, items[active].sub)),
+        React.createElement("div", { style: { display: "flex", gap: 8, marginTop: 4 } },
+            items.map((_, i) => React.createElement("div", { key: i, onClick: () => { setAnimating(true); setTimeout(() => { setActive(i); setAnimating(false); }, 400); }, style: { width: i === active ? 22 : 6, height: 6, borderRadius: 3, background: i === active ? "#c9a86c" : "rgba(255,255,255,.2)", transition: "all .3s", cursor: "pointer" } }))));
+}
+function StonesGrid() {
+    const [activeStone, setActiveStone] = useState(null);
+    return React.createElement("div", { className: "stones-grid", style: { display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2, gridAutoRows: "1fr" } },
+        STONES.map((s, i) => React.createElement(Reveal, { key: s.name, delay: i * 0.07 },
+            React.createElement("div", { className: "sp", onClick: () => setActiveStone(activeStone === i ? null : i), style: { height: "100%", display: "flex", flexDirection: "column", cursor: "pointer" } },
+                React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start" } },
+                    React.createElement("div", { style: { width: 38, height: 38, marginBottom: 16, background: `radial-gradient(circle at 35% 30%,white,${s.color},${s.color}77)`, clipPath: "polygon(50% 5%,90% 35%,80% 90%,20% 90%,10% 35%)", boxShadow: `0 0 16px ${s.color}44` } }),
+                    React.createElement("div", { className: "stone-toggle", style: { color: C.gold, fontSize: 18, lineHeight: 1, transition: "transform .3s", transform: activeStone === i ? "rotate(45deg)" : "rotate(0)" } }, "+")),
+                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 20, marginBottom: 4, color: activeStone === i ? C.gold : C.white } }, s.name),
+                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 9.5, letterSpacing: 2, color: "rgba(240,237,232,.28)", textTransform: "uppercase", marginBottom: 12 } }, s.sub),
+                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 11.5, fontWeight: 300, lineHeight: 1.75, color: "rgba(240,237,232,.45)", flex: 1 } }, s.desc),
+                activeStone === i && React.createElement("div", { style: { marginTop: 16, paddingTop: 14, borderTop: `1px solid ${s.color}33` } },
+                    React.createElement("a", { href: "#contact", className: "bg", onClick: e => { e.preventDefault(); document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }); }, style: { fontSize: 9, padding: "9px 18px", display: "inline-block", borderColor: s.color, color: s.color } }, "Заказать с этим камнем"))))));
+}
+function App() {
+    const [scroll, setScroll] = useState(0);
+    const [mouse, setMouse] = useState({ x: 0, y: 0 });
+    const [navSolid, setNavSolid] = useState(false);
+    const [formName, setFormName] = useState("");
+    const [formContact, setFormContact] = useState("");
+    const [formMessage, setFormMessage] = useState("");
+    const [formSent, setFormSent] = useState(false);
+    const heroRef = useRef(null);
+    useEffect(() => {
+        const onScroll = () => { const h = heroRef.current?.clientHeight || window.innerHeight; setScroll(Math.min(window.scrollY / h, 1)); setNavSolid(window.scrollY > 40); };
+        const onMouse = e => setMouse({ x: (e.clientX / window.innerWidth - .5) * 2, y: (e.clientY / window.innerHeight - .5) * 2 });
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("mousemove", onMouse, { passive: true });
+        return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("mousemove", onMouse); };
+    }, []);
+    const go = id => document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+    const sendViaTelegram = () => {
+        if (!formName.trim() && !formContact.trim() && !formMessage.trim()) { alert("Пожалуйста, заполните форму"); return; }
+        const text = `📋 Новая заявка с сайта zem.brilliant\n\n👤 Имя: ${formName || "—"}\n📞 Контакт: ${formContact || "—"}\n\n💬 Идея:\n${formMessage || "—"}`;
+        window.open(`https://t.me/Maximzem8?text=${encodeURIComponent(text)}`, "_blank");
+        setFormSent(true);
+    };
+    return React.createElement("div", { style: { background: C.bg, color: C.white, minHeight: "100vh", overflowX: "hidden" } },
+        React.createElement("nav", { style: { position: "fixed", top: 0, left: 0, right: 0, zIndex: 200, padding: "17px 24px", background: navSolid ? "rgba(4,6,13,0.93)" : "transparent", backdropFilter: navSolid ? "blur(20px)" : "none", borderBottom: navSolid ? `1px solid ${C.border}` : "none", transition: "all .4s", display: "flex", alignItems: "center", justifyContent: "space-between" } },
+            React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 20, fontWeight: 300, letterSpacing: 5 } }, "zem", React.createElement("span", { style: { color: C.gold } }, "."), "brilliant"),
+            React.createElement("div", { className: "nav-links", style: { display: "flex", gap: 32 } }, [["О нас","#about"],["Камни","#stones"],["Процесс","#process"],["FAQ","#faq"],["Контакт","#contact"]].map(([l,id]) => React.createElement("button", { key: l, className: "nl", onClick: () => go(id) }, l))),
+            React.createElement("a", { href: "https://t.me/zem_brilliant", className: "bg nav-tg", style: { padding: "8px 18px", fontSize: 9.5 }, target: "_blank", rel: "noreferrer" }, "Telegram")),
+        React.createElement("section", { ref: heroRef, style: { position: "relative", height: "100vh", overflow: "hidden", background: C.bg } },
+            React.createElement(Particles, { scroll }),
+            React.createElement("div", { style: { position: "absolute", bottom: 0, left: 0, right: 0, height: "20%", background: "linear-gradient(to bottom,transparent,rgba(4,6,13,1))", pointerEvents: "none", zIndex: 3 } }),
+            React.createElement("div", { className: "hero-grid", style: { position: "absolute", inset: 0, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", zIndex: 4, opacity: Math.max(0, 1 - scroll * 3) } },
+                React.createElement("div", { className: "hero-col-text", style: { display: "flex", flexDirection: "column", justifyContent: "center", padding: "100px 40px 80px 48px", overflow: "hidden", position: "relative" } },
+                    React.createElement("div", { className: "hero-diamond-bg", style: { position: "absolute", right: "-15%", top: "50%", transform: "translateY(-50%)", opacity: 0.18, pointerEvents: "none", display: "none", zIndex: 0 } },
+                        React.createElement(DiamondCanvas, { mouse: { x: 0, y: 0 }, scroll: 0 })),
+                    React.createElement("div", { style: { position: "relative", zIndex: 1 } },
+                        React.createElement("div", { className: "a0", style: { display: "inline-flex", alignItems: "center", gap: 9, border: `1px solid rgba(201,168,108,.22)`, padding: "7px 14px", marginBottom: 28, background: "rgba(201,168,108,.04)", width: "fit-content" } },
+                            React.createElement("span", { className: "dot", style: { width: 5, height: 5, borderRadius: "50%", background: C.gold, display: "inline-block" } }),
+                            React.createElement("span", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: C.gold } }, "Производство · Орёл · Россия")),
+                        React.createElement("div", { className: "a1", style: { fontFamily: "'Cormorant Garamond',serif", fontSize: "clamp(34px,3.2vw,60px)", fontWeight: 300, lineHeight: 1.05, color: C.white, letterSpacing: "-0.5px", marginBottom: 18 } }, "Природный", React.createElement("br"), React.createElement("em", { style: { fontStyle: "italic", color: C.gold } }, "бриллиант"), React.createElement("br"), "для вашей истории"),
+                        React.createElement("p", { className: "a2", style: { fontFamily: "'Montserrat',sans-serif", fontSize: 12, fontWeight: 300, lineHeight: 1.9, color: "rgba(240,237,232,0.52)", marginBottom: 28 } }, "Огранка алмазов и украшения по вашей идее или фотографии. Природные и выращенные камни."),
+                        React.createElement("div", { className: "a2 btn-row", style: { display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 28 } },
+                            React.createElement("a", { href: "#contact", className: "bf", onClick: e => { e.preventDefault(); go("#contact"); } }, "Заказать украшение"),
+                            React.createElement("a", { href: "#process", className: "bg", onClick: e => { e.preventDefault(); go("#process"); } }, "Как это работает")),
+                        React.createElement("div", { className: "a3", style: { display: "flex", gap: 24, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,.06)" } },
+                            [["20+","лет опыта"],["1000+","камней"],["Вся РФ","доставка"]].map(([n,l]) => React.createElement("div", { key: n },
+                                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 24, fontWeight: 300, color: C.gold, lineHeight: 1 } }, n),
+                                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 8, letterSpacing: 2, color: "rgba(240,237,232,.28)", textTransform: "uppercase", marginTop: 3 } }, l)))),
+                        React.createElement("div", { className: "mobile-quote", style: { display: "none", marginTop: 28, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,.06)" } },
+                            React.createElement("div", { style: { borderLeft: `2px solid ${C.gold}`, paddingLeft: 14 } },
+                                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 14, fontStyle: "italic", lineHeight: 1.65, color: "rgba(240,237,232,.6)", marginBottom: 8 } }, '"Красота не в самом камне — она в том, кого ты хочешь им обрадовать"'),
+                                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 8, letterSpacing: 2, color: C.gold, textTransform: "uppercase" } }, "— Сент-Экзюпери"))))),
+                React.createElement("div", { className: "hero-col-jewelry", style: { display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", padding: "80px 16px" } },
+                    React.createElement(JewelrySlideshow, { scroll })),
+                React.createElement("div", { className: "hero-col-diamond", style: { display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", padding: "80px 16px" } },
+                    React.createElement("div", { style: { width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${Math.max(0.3, 1 - scroll * 0.5)}) translateY(${scroll * -60}px)`, opacity: Math.max(0, 1 - scroll * 1.5) } },
+                        React.createElement(DiamondCanvas, { mouse, scroll: 0 })))),
+            React.createElement("div", { style: { position: "absolute", bottom: 22, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, opacity: Math.max(0, 1 - scroll * 8), zIndex: 10 } },
+                React.createElement("span", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 8, letterSpacing: 3, color: "rgba(255,255,255,.2)", textTransform: "uppercase" } }, "scroll"),
+                React.createElement("div", { style: { width: 1, height: 28, background: `linear-gradient(to bottom,${C.gold},transparent)` } }))),
+        React.createElement(Ticker, null),
+        React.createElement("section", { style: { padding: "90px 48px", background: C.bg, borderBottom: `1px solid ${C.border}` } },
+            React.createElement("div", { style: { maxWidth: 780, margin: "0 auto", textAlign: "center" } },
+                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: "clamp(22px,3.2vw,44px)", fontWeight: 300, lineHeight: 1.4, color: C.white, fontStyle: "italic", marginBottom: 32 } }, '"Красота не в самом камне —', React.createElement("br"), 'она в том, кого ты хочешь им обрадовать"'),
+                React.createElement("div", { style: { display: "inline-flex", alignItems: "center", gap: 16 } },
+                    React.createElement("div", { style: { width: 44, height: 1, background: C.gold, opacity: 0.45 } }),
+                    React.createElement("span", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 10, letterSpacing: 3.5, textTransform: "uppercase", color: C.gold, opacity: 0.65 } }, "Антуан де Сент-Экзюпери"),
+                    React.createElement("div", { style: { width: 44, height: 1, background: C.gold, opacity: 0.45 } })))),
+        React.createElement("section", { id: "about", className: "section-pad", style: { padding: "110px 48px", maxWidth: 1200, margin: "0 auto" } },
+            React.createElement("div", { className: "two-col", style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" } },
+                React.createElement(Reveal, null,
+                    React.createElement("div", { className: "sl" }, "О производстве"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 26 } }, "Мастерство в каждой", React.createElement("br"), React.createElement("em", { style: { color: C.gold } }, "грани камня")),
+                    React.createElement("p", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 13, fontWeight: 300, lineHeight: 1.95, color: C.muted, marginBottom: 14 } }, "Более двадцати лет работы с драгоценными камнями — от первого знакомства с сырьём до руководства производством."),
+                    React.createElement("p", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 13, fontWeight: 300, lineHeight: 1.95, color: C.muted, marginBottom: 30 } }, "Работаем с ", React.createElement("strong", { style: { color: C.white, fontWeight: 500 } }, "природными и искусственно выращенными камнями"), ". Подберём лучший вариант под ваш запрос и бюджет."),
+                    React.createElement("a", { href: "#contact", className: "bg", onClick: e => { e.preventDefault(); go("#contact"); } }, "Связаться с нами")),
+                React.createElement(Reveal, { delay: 0.15 },
+                    React.createElement("div", { style: { position: "relative" } },
+                        React.createElement("div", { style: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, border: `1px solid ${C.border}`, transform: "translate(10px,10px)", pointerEvents: "none" } }),
+                        React.createElement("div", { style: { background: "rgba(255,255,255,.02)", border: `1px solid rgba(201,168,108,.11)`, padding: "40px 38px", position: "relative" } },
+                            React.createElement("div", { style: { position: "absolute", top: -1, left: 38, width: 50, height: 2, background: C.gold } }),
+                            [["Специализация","Бриллианты — огранка любой сложности"],["Все камни","Сапфиры, рубины, изумруды, александриты"],["Природные и выращенные","Работаем с обоими типами камней"],["Ювелирная оправа","Любой дизайн воплощают партнёры-ювелиры"]].map(([t,b],i,arr) => React.createElement("div", { key: t, style: { marginBottom: i < arr.length-1 ? 22 : 0, paddingBottom: i < arr.length-1 ? 22 : 0, borderBottom: i < arr.length-1 ? `1px solid ${C.border}` : "none" } },
+                                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 18, marginBottom: 5 } }, t),
+                                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 11.5, fontWeight: 300, color: "rgba(240,237,232,.43)", lineHeight: 1.7 } }, b))))))),
+        React.createElement("section", { style: { background: "linear-gradient(135deg,rgba(201,168,108,.06),transparent)", borderTop: `1px solid rgba(201,168,108,.1)`, borderBottom: `1px solid rgba(201,168,108,.1)`, padding: "96px 48px" } },
+            React.createElement(Reveal, null,
+                React.createElement("div", { style: { maxWidth: 800, margin: "0 auto", textAlign: "center" } },
+                    React.createElement("div", { className: "sl", style: { textAlign: "center" } }, "Уникальное предложение"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 22 } }, "Украшение по вашей", React.createElement("br"), React.createElement("em", { style: { color: C.gold } }, "фотографии или идее")),
+                    React.createElement("p", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 13.5, fontWeight: 300, lineHeight: 1.95, color: C.muted, maxWidth: 500, margin: "0 auto 38px" } }, "Пришлите фото украшения, которое мечтаете подарить — или опишите идею. Подберём камень, огранем, передадим ювелиру."),
+                    React.createElement("a", { href: "#contact", className: "bf", onClick: e => { e.preventDefault(); go("#contact"); } }, "Отправить идею")))),
+        React.createElement("section", { id: "stones", className: "section-pad", style: { padding: "110px 48px" } },
+            React.createElement("div", { style: { maxWidth: 1200, margin: "0 auto" } },
+                React.createElement(Reveal, null,
+                    React.createElement("div", { className: "sl" }, "Коллекция"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 44 } }, "Камни, с которыми мы работаем")),
+                React.createElement(StonesGrid, null))),
+        React.createElement("section", { id: "process", className: "section-pad", style: { padding: "110px 48px", background: "rgba(255,255,255,.01)" } },
+            React.createElement("div", { style: { maxWidth: 840, margin: "0 auto" } },
+                React.createElement(Reveal, null,
+                    React.createElement("div", { className: "sl" }, "Как это работает"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 52 } }, "От идеи до украшения", React.createElement("br"), React.createElement("em", { style: { color: C.gold } }, "на вашей руке"))),
+                STEPS.map((s, i) => React.createElement(Reveal, { key: s.n, delay: i * 0.08 },
+                    React.createElement("div", { className: "sr" },
+                        React.createElement("div", { className: "sn" }, s.n),
+                        React.createElement("div", { style: { paddingTop: 4 } },
+                            React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 22, marginBottom: 8 } }, s.title),
+                            React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 12.5, fontWeight: 300, lineHeight: 1.85, color: C.muted } }, s.body)))))),
+        React.createElement("section", { style: { padding: "96px 48px", borderTop: `1px solid rgba(41,182,246,.07)`, background: "rgba(41,182,246,.016)" } },
+            React.createElement(Reveal, null,
+                React.createElement("div", { style: { maxWidth: 600, margin: "0 auto", textAlign: "center" } },
+                    React.createElement("div", { style: { fontSize: 30, marginBottom: 16, color: C.gold } }, "✦"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 16 } }, "Реальные работы", React.createElement("br"), "в нашем ", React.createElement("em", { style: { color: "#29b6f6" } }, "Telegram-канале")),
+                    React.createElement("p", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 13, fontWeight: 300, lineHeight: 1.9, color: C.muted, marginBottom: 30 } }, "Фото камней, готовых украшений и процесса огранки — в канале ", React.createElement("strong", { style: { color: C.white } }, "@zem.brilliant")),
+                    React.createElement("a", { href: "https://t.me/zem_brilliant", className: "tgb", target: "_blank", rel: "noreferrer" },
+                        React.createElement("svg", { width: "15", height: "15", viewBox: "0 0 24 24", fill: "currentColor" },
+                            React.createElement("path", { d: "M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.55 8.2l-2.03 9.56c-.15.67-.54.83-1.09.52l-3-2.21-1.45 1.4c-.16.16-.3.3-.6.3l.21-3.03 5.52-4.98c.24-.21-.05-.33-.37-.12L7.18 14.4l-2.95-.92c-.64-.2-.65-.64.13-.95l11.52-4.44c.54-.19 1.01.13.67.11z" })),
+                        "Открыть zem.brilliant")))),
+        React.createElement("section", { id: "faq", className: "section-pad", style: { padding: "110px 48px", background: "rgba(255,255,255,.008)" } },
+            React.createElement("div", { style: { maxWidth: 840, margin: "0 auto" } },
+                React.createElement(Reveal, null,
+                    React.createElement("div", { className: "sl" }, "Частые вопросы"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 52 } }, "Отвечаем на главные", React.createElement("br"), React.createElement("em", { style: { color: "#c9a86c" } }, "вопросы о заказе"))),
+                FAQ.map((item, i) => {
+                    const [open, setOpen] = useState(false);
+                    return React.createElement(Reveal, { key: i, delay: i * 0.06 },
+                        React.createElement("div", { style: { borderBottom: "1px solid rgba(255,255,255,.06)", cursor: "pointer" }, onClick: () => setOpen(!open) },
+                            React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 0" } },
+                                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 20, paddingRight: 24 } }, item.q),
+                                React.createElement("div", { style: { color: "#c9a86c", fontSize: 22, fontWeight: 300, flexShrink: 0, transition: "transform .3s", transform: open ? "rotate(45deg)" : "rotate(0deg)" } }, "+")),
+                            open && React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 13, fontWeight: 300, lineHeight: 1.85, color: "rgba(240,237,232,.55)", paddingBottom: 22 } }, item.a)));
+                }))),
+        React.createElement("section", { id: "contact", className: "section-pad", style: { padding: "110px 48px", borderTop: `1px solid ${C.border}` } },
+            React.createElement("div", { style: { maxWidth: 720, margin: "0 auto" } },
+                React.createElement(Reveal, null,
+                    React.createElement("div", { className: "sl" }, "Связаться"),
+                    React.createElement("h2", { className: "sh", style: { marginBottom: 40 } }, "Расскажите об идее —", React.createElement("br"), React.createElement("em", { style: { color: C.gold } }, "мы воплотим её"))),
+                React.createElement(Reveal, { delay: 0.15 },
+                    formSent
+                        ? React.createElement("div", { style: { textAlign: "center", padding: "48px 0" } },
+                            React.createElement("div", { style: { fontSize: 36, marginBottom: 16 } }, "✅"),
+                            React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 26, marginBottom: 12 } }, "Заявка отправлена!"),
+                            React.createElement("p", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 12.5, fontWeight: 300, lineHeight: 1.8, color: C.muted, marginBottom: 10, maxWidth: 460, margin: "0 auto 16px" } }, "В связи с ограничениями работы Telegram на территории РФ, сообщения могут прийти не сразу."),
+                            React.createElement("p", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 12.5, fontWeight: 300, lineHeight: 1.8, color: C.muted, marginBottom: 28, maxWidth: 460, margin: "0 auto 28px" } }, "Пока ждёте — ознакомьтесь с нашими работами в канале ", React.createElement("a", { href: "https://t.me/zem_brilliant", target: "_blank", rel: "noreferrer", style: { color: "#c9a86c", textDecoration: "none", borderBottom: "1px solid rgba(201,168,108,0.4)" } }, "zem.brilliant")),
+                            React.createElement("button", { className: "bg", onClick: () => setFormSent(false), style: { cursor: "pointer" } }, "Отправить ещё одну заявку"))
+                        : React.createElement("div", { className: "contact-grid", style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 13 } },
+                            React.createElement("input", { placeholder: "Ваше имя", value: formName, onChange: e => setFormName(e.target.value), style: { background: "rgba(255,255,255,.03)", border: `1px solid ${C.border}`, padding: "13px 16px", color: C.white, fontFamily: "'Montserrat',sans-serif", fontSize: 12.5, fontWeight: 300, width: "100%" } }),
+                            React.createElement("input", { placeholder: "Телефон или Telegram", value: formContact, onChange: e => setFormContact(e.target.value), style: { background: "rgba(255,255,255,.03)", border: `1px solid ${C.border}`, padding: "13px 16px", color: C.white, fontFamily: "'Montserrat',sans-serif", fontSize: 12.5, fontWeight: 300, width: "100%" } }),
+                            React.createElement("textarea", { placeholder: "Опишите идею или вставьте ссылку на фото...", rows: 5, value: formMessage, onChange: e => setFormMessage(e.target.value), style: { gridColumn: "1/-1", background: "rgba(255,255,255,.03)", border: `1px solid ${C.border}`, padding: "13px 16px", color: C.white, fontFamily: "'Montserrat',sans-serif", fontSize: 12.5, fontWeight: 300, resize: "none", width: "100%" } }),
+                            React.createElement("div", { style: { gridColumn: "1/-1" } },
+                                React.createElement("button", { className: "bf", onClick: sendViaTelegram, style: { width: "100%", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 10 } },
+                                    React.createElement("svg", { width: "15", height: "15", viewBox: "0 0 24 24", fill: "currentColor" },
+                                        React.createElement("path", { d: "M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.55 8.2l-2.03 9.56c-.15.67-.54.83-1.09.52l-3-2.21-1.45 1.4c-.16.16-.3.3-.6.3l.21-3.03 5.52-4.98c.24-.21-.05-.33-.37-.12L7.18 14.4l-2.95-.92c-.64-.2-.65-.64.13-.95l11.52-4.44c.54-.19 1.01.13.67.11z" })),
+                                    "Отправить заявку через Telegram")))),
+                React.createElement(Reveal, { delay: 0.22 },
+                    React.createElement("div", { className: "contact-info", style: { display: "flex", gap: 44, marginTop: 44, flexWrap: "wrap" } },
+                        [["Telegram","@zem.brilliant"],["Производство","г. Орёл, Россия"],["Доставка","Спецсвязь РФ · вся страна"]].map(([l,v]) => React.createElement("div", { key: l },
+                            React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 9, letterSpacing: 3.5, color: "rgba(240,237,232,.27)", textTransform: "uppercase", marginBottom: 6 } }, l),
+                            React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 18 } }, v))))))),
+        React.createElement("footer", { style: { padding: "26px 24px", borderTop: `1px solid ${C.border}` } },
+            React.createElement("div", { className: "footer-inner", style: { display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 } },
+                React.createElement("div", { style: { fontFamily: "'Cormorant Garamond',serif", fontSize: 17, fontWeight: 300, letterSpacing: 4 } }, "zem", React.createElement("span", { style: { color: C.gold } }, "."), "brilliant"),
+                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 9.5, color: "rgba(240,237,232,.2)", letterSpacing: 1.5 } }, "Природные камни · Профессиональная огранка · Россия"),
+                React.createElement("div", { style: { fontFamily: "'Montserrat',sans-serif", fontSize: 9.5, color: "rgba(240,237,232,.16)" } }, "© 2025 zem.brilliant"))));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App, null));
+setTimeout(() => { const l = document.getElementById("loading"); if (l) { l.classList.add("hide"); setTimeout(() => l.remove(), 500); } }, 100);
+  </script>
+</body>
+</html>
